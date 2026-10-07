@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3ead8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1814" media="(prefers-color-scheme: dark)">
   <title>AnswerMe · Ask Mr. Lincoln</title>
   <meta name="description" content="Ask Abraham Lincoln a question. Every answer is a verbatim quotation from his speeches and letters, with date and place.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +14,13 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='9' y='2' width='14' height='16' fill='%231c1714'/><rect x='4' y='17' width='24' height='4' rx='2' fill='%231c1714'/></svg>">
 </head>
 <body>
-  <header class="masthead">
-    <p class="kicker"><span>AnswerMe</span><span>Speeches &amp; letters, 1832 – 1865</span><span>Primary sources only</span></p>
+  <div class="app">
+  <header class="top">
     <h1>Ask Mr. Lincoln</h1>
-    <p class="dek">Put a question to the sixteenth President. He answers only in words he actually spoke or wrote, with the date and place for each.</p>
+    <button id="mute" type="button" class="icon-btn" aria-label="Mute voice" aria-pressed="false">
+      <svg class="on" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4ZM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6Z" fill="currentColor"/></svg>
+      <svg class="off" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.6 3 2.7-2.7-1.4-1.4-2.7 2.7-2.7-2.7-1.4 1.4 2.7 2.7-2.7 2.7 1.4 1.4 2.7-2.7 2.7 2.7 1.4-1.4-2.7-2.7Z" fill="currentColor"/></svg>
+    </button>
   </header>
 
   <main class="stage">
@@ -106,12 +111,9 @@
           <ellipse cx="200" cy="250" rx="196" ry="246" fill="none" stroke="#8c6d3f" stroke-width="5"/>
           <ellipse cx="200" cy="250" rx="188" ry="238" fill="none" stroke="#8c6d3f" stroke-width="1.2" opacity=".7"/>
         </svg>
+        <button id="hush" type="button" class="hush" hidden>Stop</button>
       </div>
       <p class="plate">A. Lincoln <span>1809 – 1865</span></p>
-      <div class="portrait-controls">
-        <button id="mute" type="button" class="ghost" aria-pressed="false">Voice on</button>
-        <button id="hush" type="button" class="ghost" hidden>Stop</button>
-      </div>
     </section>
 
     <section class="dialogue" aria-label="Conversation">
@@ -119,21 +121,17 @@
 
       <form id="ask" autocomplete="off">
         <label for="q" class="sr-only">Your question for Mr. Lincoln</label>
-        <input id="q" name="q" type="text" placeholder="Ask about liberty, war, grief, work, honesty…" maxlength="300" required>
+        <input id="q" name="q" type="text" placeholder="Ask Mr. Lincoln anything…" maxlength="300" required>
         <button id="mic" type="button" class="icon" aria-label="Ask by voice" hidden>
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12Z" fill="currentColor"/></svg>
         </button>
         <button type="submit" class="primary">Ask</button>
       </form>
 
-      <div class="chips" id="chips" aria-label="Suggested questions"></div>
     </section>
   </main>
 
-  <footer class="colophon">
-    <p><strong>How it works.</strong> Your question is matched, in your browser, against a collection of Lincoln's speeches and letters. The quotation in each answer is verbatim. The italic lead-in before it is written by this app. Sources: <em>The Collected Works of Abraham Lincoln</em> (public domain)<span id="wq-credit" hidden> and Wikiquote (CC BY-SA 4.0)</span>.</p>
-    <p>The portrait is an original illustration. This project is not affiliated with any museum, library or government body.</p>
-  </footer>
+  </div>
 
   <script type="module" src="js/app.js"></script>
 </body>

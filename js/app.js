@@ -2,18 +2,7 @@ import { QuoteIndex } from "./search.js";
 import { Avatar } from "./avatar.js";
 import { Voice } from "./voice.js";
 
-const MIN_SCORE = 1.2;           // below this, Lincoln says he has nothing on record
-const RELATED_RATIO = 0.4;       // show other passages scoring at least 40% of the best
-const SUGGESTIONS = [
-  "What is democracy?",
-  "How should we treat our enemies?",
-  "What did you think of slavery?",
-  "How do I deal with grief?",
-  "Any advice for a young lawyer?",
-  "What do you remember of Gettysburg?",
-  "How do I stay motivated?",
-  "What did you believe about race?",
-];
+const MIN_SCORE = 1.2; // below this, Lincoln says he has nothing on record
 
 const $ = (s) => document.querySelector(s);
 const transcript = $("#transcript");
@@ -35,7 +24,6 @@ async function loadQuotes() {
       const seen = new Set(quotes.map((q) => key(q.text)));
       const fresh = extra.filter((q) => !seen.has(key(q.text)));
       quotes = quotes.concat(fresh);
-      if (fresh.length) $("#wq-credit").hidden = false;
     }
   } catch { /* optional file */ }
   return quotes;
@@ -88,28 +76,9 @@ function addNarration(text) {
   speak([text]);
 }
 
-function addAnswer(q, related) {
+function addAnswer(q) {
   const li = el("li", "turn lincoln");
-  li.append(el("span", "who", "Mr. Lincoln"));
-  li.append(renderQuote(q));
-  if (related.length) {
-    const more = el("div", "related");
-    more.append(el("span", "related-label", "Also on record:"));
-    for (const r of related) {
-      const b = el("button", "related-item", `${r.work}${r.date ? ", " + r.date.slice(0, 4) : ""}`);
-      b.type = "button";
-      b.addEventListener("click", () => {
-        const li2 = el("li", "turn lincoln");
-        li2.append(el("span", "who", "Mr. Lincoln"), renderQuote(r));
-        transcript.append(li2);
-        remember(r.id);
-        scrollDown();
-        speakQuote(r);
-      });
-      more.append(b);
-    }
-    li.append(more);
-  }
+  li.append(el("span", "who", "Mr. Lincoln"), renderQuote(q));
   transcript.append(li);
   scrollDown();
   speakQuote(q);
@@ -137,16 +106,13 @@ function introFor(q) {
   return q.intro || "On that, I once said:";
 }
 
+// Bring the newest exchange into view, starting from the question, so a long
+// answer is read from its beginning rather than its end.
 function scrollDown() {
-  const last = transcript.lastElementChild;
-  if (!last) return;
-  if (getComputedStyle(transcript).overflowY === "auto") {
-    // Desktop: the conversation pane scrolls on its own; keep the page still.
-    transcript.scrollTop = last.offsetTop - transcript.offsetTop - 8;
-  } else {
-    // Mobile: the page scrolls; bring the newest answer into view.
-    last.scrollIntoView({ block: "start", behavior: "smooth" });
-  }
+  const turns = transcript.children;
+  const q = turns.length >= 2 && turns[turns.length - 2].classList.contains("you")
+    ? turns[turns.length - 2] : turns[turns.length - 1];
+  if (q) transcript.scrollTo({ top: q.offsetTop - 12, behavior: "smooth" });
 }
 
 // ---------- speaking ----------
@@ -185,12 +151,7 @@ function ask(question) {
     if (alt) pick = alt;
   }
   remember(pick.quote.id);
-
-  const related = results
-    .filter((r) => r !== pick && r.score >= results[0].score * RELATED_RATIO && r.quote.text !== pick.quote.text)
-    .slice(0, 3)
-    .map((r) => r.quote);
-  addAnswer(pick.quote, related);
+  addAnswer(pick.quote);
 }
 
 // ---------- wiring ----------
@@ -198,29 +159,24 @@ $("#ask").addEventListener("submit", (e) => {
   e.preventDefault();
   ask(input.value);
   input.value = "";
+  // On phones, close the keyboard so the portrait has room while he answers.
+  if (matchMedia("(pointer: coarse)").matches) input.blur();
 });
 
-$("#mute").addEventListener("click", (e) => {
+const muteBtn = $("#mute");
+muteBtn.addEventListener("click", () => {
   voice.muted = !voice.muted;
-  e.currentTarget.textContent = voice.muted ? "Voice off" : "Voice on";
-  e.currentTarget.setAttribute("aria-pressed", String(voice.muted));
-  if (voice.muted) voice.cancel(), avatar.stop(), ($("#hush").hidden = true);
+  muteBtn.setAttribute("aria-pressed", String(voice.muted));
+  muteBtn.setAttribute("aria-label", voice.muted ? "Unmute voice" : "Mute voice");
+  if (voice.muted) { voice.cancel(); avatar.stop(); $("#hush").hidden = true; }
 });
-if (!voice.available) { $("#mute").textContent = "No voice in this browser"; $("#mute").disabled = true; }
+if (!voice.available) { muteBtn.hidden = true; }
 
 $("#hush").addEventListener("click", () => {
   voice.cancel();
   avatar.stop();
   $("#hush").hidden = true;
 });
-
-const chips = $("#chips");
-for (const s of SUGGESTIONS) {
-  const b = el("button", "chip", s);
-  b.type = "button";
-  b.addEventListener("click", () => ask(s));
-  chips.append(b);
-}
 
 // Voice input (Chrome, Edge, Safari)
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -252,7 +208,7 @@ loadQuotes().then((quotes) => {
   const welcome = el("li", "turn lincoln");
   welcome.append(
     el("span", "who", "Mr. Lincoln"),
-    el("p", "narration", `Good day. I have ${quotes.length} passages from my speeches and letters at hand. Ask me a question, and I will answer in my own recorded words.`)
+    el("p", "narration", "Good day, friend. Ask me anything, and I shall answer only in words I truly spoke or wrote.")
   );
   transcript.append(welcome);
   const q = new URLSearchParams(location.search).get("q");
