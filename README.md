@@ -21,9 +21,13 @@ Tip: `http://localhost:8000/?q=What is democracy?` asks a question on load.
 
 ## Deploy for free (GitHub Pages)
 
-1. Push this folder to a GitHub repo (branch `main`).
-2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Every push to `main` deploys via `.github/workflows/pages.yml`. The site appears at `https://<you>.github.io/<repo>/`.
+1. Move the workflow files into place (one time):
+   ```bash
+   mkdir -p .github/workflows && mv workflows/*.yml .github/workflows/ && rmdir workflows
+   ```
+2. Push this folder to a GitHub repo (branch `main`).
+3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+4. Every push to `main` deploys via `.github/workflows/pages.yml`. The site appears at `https://<you>.github.io/<repo>/`.
 
 ## The quotes
 
@@ -63,7 +67,7 @@ js/avatar.js               blinking, swaying, lip movement
 js/voice.js                text-to-speech with chunking
 data/lincoln.json          curated quotes
 scripts/collect_wikiquote.py
-.github/workflows/         Pages deploy + quote collection
+.github/workflows/         Pages deploy + quote collection (ship in workflows/ until moved)
 ```
 
 ## Ideas for next steps
