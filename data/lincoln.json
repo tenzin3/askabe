@@ -1,0 +1,545 @@
+{
+  "speaker": "Abraham Lincoln",
+  "wikidata_id": "Q91",
+  "lifespan": "1809–1865",
+  "license": "Public domain. Lincoln's speeches and writings (texts as printed in The Collected Works of Abraham Lincoln, ed. Roy P. Basler, 1953).",
+  "collection_url": "https://quod.lib.umich.edu/l/lincoln/",
+  "quotes": [
+    {
+      "id": "gettysburg-1",
+      "text": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
+      "work": "Gettysburg Address",
+      "kind": "speech",
+      "date": "1863-11-19",
+      "place": "Gettysburg, Pennsylvania",
+      "intro": "At the dedication of the soldiers' cemetery at Gettysburg, on November 19, 1863, I began this way:",
+      "topics": ["equality", "nation", "founding", "fathers", "declaration", "liberty", "america", "history", "gettysburg"]
+    },
+    {
+      "id": "gettysburg-2",
+      "text": "The world will little note, nor long remember what we say here, but it can never forget what they did here.",
+      "work": "Gettysburg Address",
+      "kind": "speech",
+      "date": "1863-11-19",
+      "place": "Gettysburg, Pennsylvania",
+      "intro": "Standing among the graves at Gettysburg, on November 19, 1863, I said:",
+      "topics": ["soldiers", "sacrifice", "memory", "remember", "battle", "honor", "dead", "gettysburg", "legacy"]
+    },
+    {
+      "id": "gettysburg-3",
+      "text": "It is rather for us to be here dedicated to the great task remaining before us — that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion — that we here highly resolve that these dead shall not have died in vain — that this nation, under God, shall have a new birth of freedom — and that government of the people, by the people, for the people, shall not perish from the earth.",
+      "work": "Gettysburg Address",
+      "kind": "speech",
+      "date": "1863-11-19",
+      "place": "Gettysburg, Pennsylvania",
+      "intro": "At Gettysburg, on November 19, 1863, I closed with these words:",
+      "topics": ["democracy", "government", "people", "freedom", "sacrifice", "purpose", "duty", "gettysburg", "nation", "republic"]
+    },
+    {
+      "id": "second-inaugural-1",
+      "text": "With malice toward none, with charity for all, with firmness in the right as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds, to care for him who shall have borne the battle and for his widow and his orphan, to do all which may achieve and cherish a just and lasting peace among ourselves and with all nations.",
+      "work": "Second Inaugural Address",
+      "kind": "speech",
+      "date": "1865-03-04",
+      "place": "Washington, D.C.",
+      "intro": "In my Second Inaugural Address, at the Capitol on March 4, 1865, as the war neared its end, I said:",
+      "topics": ["enemies", "forgiveness", "malice", "charity", "peace", "healing", "reconciliation", "veterans", "kindness", "unity", "reconstruction"]
+    },
+    {
+      "id": "second-inaugural-2",
+      "text": "Both parties deprecated war, but one of them would make war rather than let the nation survive, and the other would accept war rather than let it perish, and the war came.",
+      "work": "Second Inaugural Address",
+      "kind": "speech",
+      "date": "1865-03-04",
+      "place": "Washington, D.C.",
+      "intro": "Looking back on how the war began, in my Second Inaugural Address on March 4, 1865, I said:",
+      "topics": ["war", "civil war", "cause", "secession", "conflict", "began", "start", "why"]
+    },
+    {
+      "id": "second-inaugural-3",
+      "text": "Both read the same Bible and pray to the same God; and each invokes His aid against the other. It may seem strange that any men should dare to ask a just God's assistance in wringing their bread from the sweat of other men's faces; but let us judge not that we be not judged. The prayers of both could not be answered; that of neither has been answered fully. The Almighty has His own purposes.",
+      "work": "Second Inaugural Address",
+      "kind": "speech",
+      "date": "1865-03-04",
+      "place": "Washington, D.C.",
+      "intro": "On religion and the war, in my Second Inaugural Address on March 4, 1865, I said:",
+      "topics": ["god", "religion", "faith", "prayer", "bible", "judgment", "providence", "war", "slavery", "church"]
+    },
+    {
+      "id": "second-inaugural-4",
+      "text": "Fondly do we hope — fervently do we pray — that this mighty scourge of war may speedily pass away.",
+      "work": "Second Inaugural Address",
+      "kind": "speech",
+      "date": "1865-03-04",
+      "place": "Washington, D.C.",
+      "intro": "In my Second Inaugural Address, on March 4, 1865, I said:",
+      "topics": ["war", "hope", "prayer", "peace", "end", "suffering"]
+    },
+    {
+      "id": "first-inaugural-1",
+      "text": "We are not enemies, but friends. We must not be enemies. Though passion may have strained, it must not break our bonds of affection. The mystic chords of memory, stretching from every battle-field, and patriot grave, to every living heart and hearthstone, all over this broad land, will yet swell the chorus of the Union, when again touched, as surely they will be, by the better angels of our nature.",
+      "work": "First Inaugural Address",
+      "kind": "speech",
+      "date": "1861-03-04",
+      "place": "Washington, D.C.",
+      "intro": "In my First Inaugural Address, on March 4, 1861, pleading with the South, I said:",
+      "topics": ["friends", "enemies", "union", "division", "affection", "better angels", "unity", "polarization", "disagreement", "anger", "south"]
+    },
+    {
+      "id": "first-inaugural-2",
+      "text": "In your hands, my dissatisfied fellow countrymen, and not in mine, is the momentous issue of civil war. The government will not assail you. You can have no conflict, without being yourselves the aggressors.",
+      "work": "First Inaugural Address",
+      "kind": "speech",
+      "date": "1861-03-04",
+      "place": "Washington, D.C.",
+      "intro": "In my First Inaugural Address, on March 4, 1861, I told the seceding states:",
+      "topics": ["civil war", "secession", "south", "conflict", "aggression", "war", "start"]
+    },
+    {
+      "id": "first-inaugural-3",
+      "text": "This country, with its institutions, belongs to the people who inhabit it. Whenever they shall grow weary of the existing Government, they can exercise their constitutional right of amending it, or their revolutionary right to dismember, or overthrow it.",
+      "work": "First Inaugural Address",
+      "kind": "speech",
+      "date": "1861-03-04",
+      "place": "Washington, D.C.",
+      "intro": "In my First Inaugural Address, on March 4, 1861, I said:",
+      "topics": ["people", "government", "constitution", "amend", "revolution", "rights", "country", "change"]
+    },
+    {
+      "id": "house-divided",
+      "text": "\"A house divided against itself cannot stand.\" I believe this government cannot endure, permanently half slave and half free. I do not expect the Union to be dissolved — I do not expect the house to fall — but I do expect it will cease to be divided. It will become all one thing or all the other.",
+      "work": "\"House Divided\" Speech",
+      "kind": "speech",
+      "date": "1858-06-16",
+      "place": "Springfield, Illinois",
+      "intro": "Accepting the Republican nomination for the Senate, at Springfield on June 16, 1858, I said:",
+      "topics": ["house divided", "division", "slavery", "union", "free", "divided", "nation", "future"]
+    },
+    {
+      "id": "cooper-union",
+      "text": "Let us have faith that right makes might, and in that faith, let us, to the end, dare to do our duty as we understand it.",
+      "work": "Cooper Union Address",
+      "kind": "speech",
+      "date": "1860-02-27",
+      "place": "New York City",
+      "intro": "At the close of my address at Cooper Union in New York, on February 27, 1860, I said:",
+      "topics": ["faith", "right", "might", "duty", "courage", "conviction", "principle", "doing right", "motivation"]
+    },
+    {
+      "id": "lyceum",
+      "text": "At what point then is the approach of danger to be expected? I answer, if it ever reach us, it must spring up amongst us. It cannot come from abroad. If destruction be our lot, we must ourselves be its author and finisher. As a nation of freemen, we must live through all time, or die by suicide.",
+      "work": "Address before the Young Men's Lyceum",
+      "kind": "speech",
+      "date": "1838-01-27",
+      "place": "Springfield, Illinois",
+      "intro": "As a young man of twenty-eight, speaking to the Young Men's Lyceum of Springfield on January 27, 1838, I said:",
+      "topics": ["danger", "threat", "america", "destruction", "enemy", "foreign", "democracy", "future", "mob", "nation", "collapse"]
+    },
+    {
+      "id": "greeley-1",
+      "text": "My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it; and if I could save it by freeing some and leaving others alone I would also do that.",
+      "work": "Letter to Horace Greeley",
+      "kind": "letter",
+      "date": "1862-08-22",
+      "place": "Washington, D.C.",
+      "intro": "In a public letter to the editor Horace Greeley, on August 22, 1862, I wrote:",
+      "topics": ["union", "slavery", "war aims", "goal", "purpose", "emancipation", "priority", "free"]
+    },
+    {
+      "id": "greeley-2",
+      "text": "I have here stated my purpose according to my view of official duty; and I intend no modification of my oft-expressed personal wish that all men every where could be free.",
+      "work": "Letter to Horace Greeley",
+      "kind": "letter",
+      "date": "1862-08-22",
+      "place": "Washington, D.C.",
+      "intro": "In the same letter to Horace Greeley, on August 22, 1862, I added:",
+      "topics": ["freedom", "slavery", "personal", "wish", "duty", "free", "all men"]
+    },
+    {
+      "id": "hodges-1",
+      "text": "I am naturally anti-slavery. If slavery is not wrong, nothing is wrong. I can not remember when I did not so think, and feel.",
+      "work": "Letter to Albert G. Hodges",
+      "kind": "letter",
+      "date": "1864-04-04",
+      "place": "Washington, D.C.",
+      "intro": "In a letter to the Kentucky editor Albert Hodges, on April 4, 1864, I wrote:",
+      "topics": ["slavery", "wrong", "moral", "anti-slavery", "belief", "feel", "conscience"]
+    },
+    {
+      "id": "hodges-2",
+      "text": "I claim not to have controlled events, but confess plainly that events have controlled me.",
+      "work": "Letter to Albert G. Hodges",
+      "kind": "letter",
+      "date": "1864-04-04",
+      "place": "Washington, D.C.",
+      "intro": "In my letter to Albert Hodges, on April 4, 1864, I confessed:",
+      "topics": ["events", "control", "humility", "leadership", "power", "presidency", "fate"]
+    },
+    {
+      "id": "peoria-1",
+      "text": "No man is good enough to govern another man, without that other's consent.",
+      "work": "Speech at Peoria",
+      "kind": "speech",
+      "date": "1854-10-16",
+      "place": "Peoria, Illinois",
+      "intro": "Speaking at Peoria, Illinois, on October 16, 1854, I said:",
+      "topics": ["consent", "self-government", "govern", "democracy", "rights", "slavery", "power", "liberty"]
+    },
+    {
+      "id": "peoria-2",
+      "text": "This declared indifference, but as I must think, covert real zeal for the spread of slavery, I can not but hate. I hate it because of the monstrous injustice of slavery itself.",
+      "work": "Speech at Peoria",
+      "kind": "speech",
+      "date": "1854-10-16",
+      "place": "Peoria, Illinois",
+      "intro": "Answering Senator Douglas at Peoria, on October 16, 1854, I said:",
+      "topics": ["slavery", "injustice", "hate", "spread", "kansas", "nebraska", "douglas", "moral"]
+    },
+    {
+      "id": "pierce",
+      "text": "This is a world of compensations; and he who would be no slave, must consent to have no slave. Those who deny freedom to others, deserve it not for themselves; and, under a just God, can not long retain it.",
+      "work": "Letter to Henry L. Pierce and others",
+      "kind": "letter",
+      "date": "1859-04-06",
+      "place": "Springfield, Illinois",
+      "intro": "Declining an invitation to a Jefferson birthday festival in Boston, in a letter of April 6, 1859, I wrote:",
+      "topics": ["freedom", "slavery", "deny", "liberty", "justice", "god", "jefferson", "others"]
+    },
+    {
+      "id": "democracy-fragment",
+      "text": "As I would not be a slave, so I would not be a master. This expresses my idea of democracy. Whatever differs from this, to the extent of the difference, is no democracy.",
+      "work": "Fragment on Democracy",
+      "kind": "writing",
+      "date": "1858-08-01",
+      "date_precision": "approximate",
+      "place": "Springfield, Illinois",
+      "intro": "In a private note I wrote around August 1858, I defined it this way:",
+      "topics": ["democracy", "definition", "slave", "master", "equality", "meaning", "idea"]
+    },
+    {
+      "id": "baltimore-liberty-1",
+      "text": "The world has never had a good definition of the word liberty, and the American people, just now, are much in want of one. We all declare for liberty; but in using the same word we do not all mean the same thing.",
+      "work": "Address at Sanitary Fair",
+      "kind": "speech",
+      "date": "1864-04-18",
+      "place": "Baltimore, Maryland",
+      "intro": "At the Sanitary Fair in Baltimore, on April 18, 1864, I said:",
+      "topics": ["liberty", "freedom", "definition", "meaning", "words", "american"]
+    },
+    {
+      "id": "baltimore-liberty-2",
+      "text": "The shepherd drives the wolf from the sheep's throat, for which the sheep thanks the shepherd as a liberator, while the wolf denounces him for the same act as the destroyer of liberty, especially as the sheep was a black one.",
+      "work": "Address at Sanitary Fair",
+      "kind": "speech",
+      "date": "1864-04-18",
+      "place": "Baltimore, Maryland",
+      "intro": "Explaining what liberty means, in Baltimore on April 18, 1864, I offered this parable:",
+      "topics": ["liberty", "freedom", "liberator", "parable", "slavery", "perspective", "story", "wolf", "sheep"]
+    },
+    {
+      "id": "annual-1862-1",
+      "text": "The dogmas of the quiet past, are inadequate to the stormy present. The occasion is piled high with difficulty, and we must rise with the occasion. As our case is new, so we must think anew, and act anew. We must disenthrall ourselves, and then we shall save our country.",
+      "work": "Annual Message to Congress",
+      "kind": "message",
+      "date": "1862-12-01",
+      "place": "Washington, D.C.",
+      "intro": "In my Annual Message to Congress, on December 1, 1862, I wrote:",
+      "topics": ["change", "new ideas", "crisis", "difficulty", "innovation", "think", "adapt", "past", "challenge", "progress"]
+    },
+    {
+      "id": "annual-1862-2",
+      "text": "Fellow-citizens, we cannot escape history. We of this Congress and this administration, will be remembered in spite of ourselves. In giving freedom to the slave, we assure freedom to the free — honorable alike in what we give, and what we preserve. We shall nobly save, or meanly lose, the last best hope of earth.",
+      "work": "Annual Message to Congress",
+      "kind": "message",
+      "date": "1862-12-01",
+      "place": "Washington, D.C.",
+      "intro": "Closing my Annual Message to Congress, on December 1, 1862, I wrote:",
+      "topics": ["history", "legacy", "remembered", "freedom", "slavery", "emancipation", "hope", "america", "congress"]
+    },
+    {
+      "id": "annual-1861-labor",
+      "text": "Labor is prior to, and independent of, capital. Capital is only the fruit of labor, and could never have existed if labor had not first existed. Labor is the superior of capital, and deserves much the higher consideration.",
+      "work": "Annual Message to Congress",
+      "kind": "message",
+      "date": "1861-12-03",
+      "place": "Washington, D.C.",
+      "intro": "In my first Annual Message to Congress, on December 3, 1861, I wrote:",
+      "topics": ["labor", "capital", "work", "workers", "economy", "money", "wealth", "business", "jobs"]
+    },
+    {
+      "id": "workingmen",
+      "text": "Property is the fruit of labor — property is desirable — is a positive good in the world. That some should be rich, shows that others may become rich, and hence is just encouragement to industry and enterprize. Let not him who is houseless pull down the house of another; but let him labor diligently and build one for himself, thus by example assuring that his own shall be safe from violence when built.",
+      "work": "Reply to New York Workingmen's Democratic Republican Association",
+      "kind": "speech",
+      "date": "1864-03-21",
+      "place": "Washington, D.C.",
+      "intro": "Replying to a workingmen's association from New York, on March 21, 1864, I said:",
+      "topics": ["property", "rich", "wealth", "labor", "work", "money", "enterprise", "success", "poor", "economy", "house"]
+    },
+    {
+      "id": "ohio-regiment",
+      "text": "I happen temporarily to occupy this big White House. I am a living witness that any one of your children may look to come here as my father's child has.",
+      "work": "Speech to the 166th Ohio Regiment",
+      "kind": "speech",
+      "date": "1864-08-22",
+      "place": "Washington, D.C.",
+      "intro": "Speaking to soldiers of the 166th Ohio Regiment, on August 22, 1864, I said:",
+      "topics": ["white house", "opportunity", "children", "humble", "poor", "american dream", "father", "presidency", "success"]
+    },
+    {
+      "id": "law-lecture-1",
+      "text": "Discourage litigation. Persuade your neighbors to compromise whenever you can. Point out to them how the nominal winner is often a real loser — in fees, expenses, and waste of time. As a peacemaker the lawyer has a superior opportunity of being a good man. There will still be business enough.",
+      "work": "Notes for a Law Lecture",
+      "kind": "writing",
+      "date": "1850-07-01",
+      "date_precision": "approximate",
+      "place": "Springfield, Illinois",
+      "intro": "In notes I wrote around 1850 for a lecture to young lawyers, I advised:",
+      "topics": ["lawyer", "law", "advice", "compromise", "conflict", "peacemaker", "litigation", "career", "neighbors", "dispute"]
+    },
+    {
+      "id": "law-lecture-2",
+      "text": "Resolve to be honest at all events; and if in your own judgment you can not be an honest lawyer, resolve to be honest without being a lawyer.",
+      "work": "Notes for a Law Lecture",
+      "kind": "writing",
+      "date": "1850-07-01",
+      "date_precision": "approximate",
+      "place": "Springfield, Illinois",
+      "intro": "In my notes for a law lecture, around 1850, I wrote:",
+      "topics": ["honest", "honesty", "lawyer", "integrity", "career", "advice", "ethics", "truth"]
+    },
+    {
+      "id": "reavis",
+      "text": "Always bear in mind that your own resolution to succeed, is more important than any other one thing.",
+      "work": "Letter to Isham Reavis",
+      "kind": "letter",
+      "date": "1855-11-05",
+      "place": "Springfield, Illinois",
+      "intro": "To a young man who wished to study law, in a letter of November 5, 1855, I wrote:",
+      "topics": ["success", "resolution", "determination", "advice", "motivation", "goals", "young", "study", "career"]
+    },
+    {
+      "id": "wisconsin-pass-away",
+      "text": "It is said an Eastern monarch once charged his wise men to invent him a sentence, to be ever in view, and which should be true and appropriate in all times and situations. They presented him the words: \"And this, too, shall pass away.\" How much it expresses! How chastening in the hour of pride! — how consoling in the depths of affliction!",
+      "work": "Address before the Wisconsin State Agricultural Society",
+      "kind": "speech",
+      "date": "1859-09-30",
+      "place": "Milwaukee, Wisconsin",
+      "intro": "At the Wisconsin State Fair in Milwaukee, on September 30, 1859, I told this story:",
+      "topics": ["hard times", "sadness", "pride", "comfort", "wisdom", "affliction", "pass", "difficult", "struggle", "story"]
+    },
+    {
+      "id": "temperance",
+      "text": "If you would win a man to your cause, first convince him that you are his sincere friend.",
+      "work": "Temperance Address",
+      "kind": "speech",
+      "date": "1842-02-22",
+      "place": "Springfield, Illinois",
+      "intro": "Speaking to the Washington Temperance Society in Springfield, on February 22, 1842, I said:",
+      "topics": ["persuasion", "persuade", "convince", "friend", "influence", "argument", "people", "leadership", "kindness"]
+    },
+    {
+      "id": "sangamo-ambition",
+      "text": "Every man is said to have his peculiar ambition. Whether it be true or not, I can say for one that I have no other so great as that of being truly esteemed of my fellow men, by rendering myself worthy of their esteem.",
+      "work": "Communication to the People of Sangamo County",
+      "kind": "writing",
+      "date": "1832-03-09",
+      "place": "New Salem, Illinois",
+      "intro": "In my very first announcement as a candidate, at age twenty-three, on March 9, 1832, I wrote:",
+      "topics": ["ambition", "goal", "respect", "esteem", "young", "first", "politics", "life", "purpose"]
+    },
+    {
+      "id": "sangamo-education",
+      "text": "Upon the subject of education, not presuming to dictate any plan or system respecting it, I can only say that I view it as the most important subject which we as a people can be engaged in.",
+      "work": "Communication to the People of Sangamo County",
+      "kind": "writing",
+      "date": "1832-03-09",
+      "place": "New Salem, Illinois",
+      "intro": "In my first political announcement, on March 9, 1832, I wrote:",
+      "topics": ["education", "school", "learning", "study", "teaching", "important", "reading"]
+    },
+    {
+      "id": "discoveries-writing",
+      "text": "Writing — the art of communicating thoughts to the mind, through the eye — is the great invention of the world.",
+      "work": "Second Lecture on Discoveries and Inventions",
+      "kind": "speech",
+      "date": "1859-02-11",
+      "place": "Jacksonville, Illinois",
+      "intro": "In my lecture on discoveries and inventions, at Jacksonville, Illinois, on February 11, 1859, I said:",
+      "topics": ["writing", "invention", "reading", "books", "technology", "communication", "learning", "science"]
+    },
+    {
+      "id": "ottawa-public-sentiment",
+      "text": "In this age, and this country, public sentiment is every thing. With public sentiment, nothing can fail; without it nothing can succeed. Consequently he who moulds public sentiment, goes deeper than he who enacts statutes or pronounces decisions.",
+      "work": "First Debate with Stephen A. Douglas",
+      "kind": "debate",
+      "date": "1858-08-21",
+      "place": "Ottawa, Illinois",
+      "intro": "In my first debate with Senator Douglas, at Ottawa, Illinois, on August 21, 1858, I said:",
+      "topics": ["public opinion", "sentiment", "media", "politics", "influence", "law", "people", "debate", "persuasion"]
+    },
+    {
+      "id": "charleston-debate",
+      "text": "I will say then that I am not, nor ever have been in favor of bringing about in any way the social and political equality of the white and black races — that I am not nor ever have been in favor of making voters or jurors of negroes, nor of qualifying them to hold office, nor to intermarry with white people.",
+      "work": "Fourth Debate with Stephen A. Douglas",
+      "kind": "debate",
+      "date": "1858-09-18",
+      "place": "Charleston, Illinois",
+      "intro": "I will not hide the record. In my debate with Douglas at Charleston, Illinois, on September 18, 1858, before a southern Illinois crowd, I said this:",
+      "topics": ["race", "racial equality", "black", "racism", "voting", "equality", "debate", "views"],
+      "note": "Lincoln's views on race shifted during the war. See his last public address (April 11, 1865), where he backed voting rights for some Black men."
+    },
+    {
+      "id": "last-address-suffrage",
+      "text": "It is also unsatisfactory to some that the elective franchise is not given to the colored man. I would myself prefer that it were now conferred on the very intelligent, and on those who serve our cause as soldiers.",
+      "work": "Last Public Address",
+      "kind": "speech",
+      "date": "1865-04-11",
+      "place": "Washington, D.C.",
+      "intro": "In my last public address, from a White House window on April 11, 1865, I said:",
+      "topics": ["voting", "suffrage", "black", "race", "racial equality", "soldiers", "reconstruction", "rights", "vote"],
+      "note": "John Wilkes Booth was in the crowd for this speech; he shot Lincoln three days later."
+    },
+    {
+      "id": "speed-know-nothings",
+      "text": "As a nation, we began by declaring that \"all men are created equal.\" We now practically read it \"all men are created equal, except negroes.\" When the Know-Nothings get control, it will read \"all men are created equal, except negroes, and foreigners, and catholics.\" When it comes to this I should prefer emigrating to some country where they make no pretence of loving liberty — to Russia, for instance, where despotism can be taken pure, and without the base alloy of hypocracy.",
+      "work": "Letter to Joshua F. Speed",
+      "kind": "letter",
+      "date": "1855-08-24",
+      "place": "Springfield, Illinois",
+      "intro": "In a private letter to my old friend Joshua Speed, on August 24, 1855, I wrote:",
+      "topics": ["immigrants", "immigration", "foreigners", "catholics", "know-nothings", "equality", "hypocrisy", "prejudice", "discrimination", "religion"]
+    },
+    {
+      "id": "dred-scott-declaration",
+      "text": "They meant to set up a standard maxim for free society, which should be familiar to all, and revered by all; constantly looked to, constantly labored for, and even though never perfectly attained, constantly approximated, and thereby constantly spreading and deepening its influence, and augmenting the happiness and value of life to all people of all colors every where.",
+      "work": "Speech on the Dred Scott Decision",
+      "kind": "speech",
+      "date": "1857-06-26",
+      "place": "Springfield, Illinois",
+      "intro": "Speaking of what the signers of the Declaration of Independence intended, at Springfield on June 26, 1857, I said:",
+      "topics": ["declaration", "founders", "equality", "ideal", "all men created equal", "dred scott", "happiness", "goal"]
+    },
+    {
+      "id": "hooker-1",
+      "text": "I have heard, in such way as to believe it, of your recently saying that both the Army and the Government needed a Dictator. Of course it was not for this, but in spite of it, that I have given you the command. Only those generals who gain successes, can set up dictators. What I now ask of you is military success, and I will risk the dictatorship.",
+      "work": "Letter to General Joseph Hooker",
+      "kind": "letter",
+      "date": "1863-01-26",
+      "place": "Washington, D.C.",
+      "intro": "Giving General Joseph Hooker command of the Army of the Potomac, on January 26, 1863, I wrote:",
+      "topics": ["generals", "army", "military", "dictator", "success", "leadership", "management", "boss", "humor"]
+    },
+    {
+      "id": "hooker-2",
+      "text": "Beware of rashness, but with energy, and sleepless vigilance, go forward, and give us victories.",
+      "work": "Letter to General Joseph Hooker",
+      "kind": "letter",
+      "date": "1863-01-26",
+      "place": "Washington, D.C.",
+      "intro": "Closing my letter to General Hooker, on January 26, 1863, I wrote:",
+      "topics": ["victory", "energy", "rashness", "advice", "leadership", "action", "military", "work hard"]
+    },
+    {
+      "id": "mcclellan",
+      "text": "Are you not over-cautious when you assume that you can not do what the enemy is constantly doing?",
+      "work": "Letter to General George B. McClellan",
+      "kind": "letter",
+      "date": "1862-10-13",
+      "place": "Washington, D.C.",
+      "intro": "Prodding General McClellan to move his army, on October 13, 1862, I wrote:",
+      "topics": ["mcclellan", "generals", "caution", "action", "delay", "procrastination", "army", "military"]
+    },
+    {
+      "id": "divine-will",
+      "text": "The will of God prevails. In great contests each party claims to act in accordance with the will of God. Both may be, and one must be wrong. God can not be for, and against the same thing at the same time.",
+      "work": "Meditation on the Divine Will",
+      "kind": "writing",
+      "date": "1862-09-02",
+      "date_precision": "approximate",
+      "place": "Washington, D.C.",
+      "intro": "In a private reflection I wrote around September 1862, never meant for publication, I wrote:",
+      "topics": ["god", "religion", "faith", "will", "war", "providence", "belief", "church"]
+    },
+    {
+      "id": "mccullough-grief",
+      "text": "In this sad world of ours, sorrow comes to all; and, to the young, it comes with bitterest agony, because it takes them unawares. The older have learned to ever expect it. I am anxious to afford some alleviation of your present distress. Perfect relief is not possible, except with time. You can not now realize that you will ever feel better. Is not this so? And yet it is a mistake. You are sure to be happy again.",
+      "work": "Letter to Fanny McCullough",
+      "kind": "letter",
+      "date": "1862-12-23",
+      "place": "Washington, D.C.",
+      "intro": "To a young woman whose father, a colonel and my old friend, had been killed in battle, I wrote on December 23, 1862:",
+      "topics": ["grief", "sadness", "loss", "death", "sorrow", "comfort", "happy", "depression", "mourning", "hope", "sad"]
+    },
+    {
+      "id": "johnston-idler",
+      "text": "You are not lazy, and still you are an idler. I doubt whether since I saw you, you have done a good whole day's work, in any one day.",
+      "work": "Letter to John D. Johnston",
+      "kind": "letter",
+      "date": "1848-12-24",
+      "place": "Washington, D.C.",
+      "intro": "To my stepbrother John Johnston, who had asked me for money, I wrote on December 24, 1848:",
+      "topics": ["lazy", "work", "money", "family", "idle", "advice", "loan", "humor", "effort"]
+    },
+    {
+      "id": "union-league-horses",
+      "text": "I do not allow myself to suppose that either the convention or the League, have concluded to decide that I am either the greatest, or best man in America, but rather they have concluded that it is not best to swap horses while crossing the river, and have further concluded that I am not so poor a horse that they might not make a botch of it in trying to swap.",
+      "work": "Reply to Delegation from the National Union League",
+      "kind": "speech",
+      "date": "1864-06-09",
+      "place": "Washington, D.C.",
+      "intro": "After I was renominated for President, replying to the National Union League on June 9, 1864, I said:",
+      "topics": ["election", "reelection", "humility", "humor", "horses", "change", "campaign", "nomination", "funny"]
+    },
+    {
+      "id": "serenade-election",
+      "text": "But the election, along with its incidental, and undesirable strife, has done good too. It has demonstrated that a people's government can sustain a national election, in the midst of a great civil war.",
+      "work": "Response to a Serenade",
+      "kind": "speech",
+      "date": "1864-11-10",
+      "place": "Washington, D.C.",
+      "intro": "Two days after my reelection, responding to a serenade at the White House on November 10, 1864, I said:",
+      "topics": ["election", "democracy", "voting", "war", "strife", "government", "people", "vote"]
+    },
+    {
+      "id": "july-1861-message",
+      "text": "And this issue embraces more than the fate of these United States. It presents to the whole family of man, the question, whether a constitutional republic, or a democracy — a government of the people, by the same people — can, or cannot, maintain its territorial integrity, against its own domestic foes.",
+      "work": "Message to Congress in Special Session",
+      "kind": "message",
+      "date": "1861-07-04",
+      "place": "Washington, D.C.",
+      "intro": "In my message to Congress on July 4, 1861, explaining why the war mattered, I wrote:",
+      "topics": ["democracy", "republic", "war", "world", "secession", "why fight", "union", "purpose"]
+    },
+    {
+      "id": "emancipation",
+      "text": "And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.",
+      "work": "Emancipation Proclamation",
+      "kind": "proclamation",
+      "date": "1863-01-01",
+      "place": "Washington, D.C.",
+      "intro": "Closing the Emancipation Proclamation, which I signed on January 1, 1863, I wrote:",
+      "topics": ["emancipation", "proclamation", "slavery", "justice", "freedom", "free", "slaves", "constitution", "1863"]
+    },
+    {
+      "id": "farewell-springfield",
+      "text": "My friends — No one, not in my situation, can appreciate my feeling of sadness at this parting. To this place, and the kindness of these people, I owe every thing. Here I have lived a quarter of a century, and have passed from a young to an old man. Here my children have been born, and one is buried.",
+      "work": "Farewell Address at Springfield",
+      "kind": "speech",
+      "date": "1861-02-11",
+      "place": "Springfield, Illinois",
+      "intro": "Leaving Springfield by train for Washington, on February 11, 1861, I said to my neighbors:",
+      "topics": ["home", "springfield", "goodbye", "farewell", "family", "children", "illinois", "friends", "leaving"]
+    },
+    {
+      "id": "last-address-gladness",
+      "text": "We meet this evening, not in sorrow, but in gladness of heart. The evacuation of Petersburg and Richmond, and the surrender of the principal insurgent army, give hope of a righteous and speedy peace whose joyous expression can not be restrained.",
+      "work": "Last Public Address",
+      "kind": "speech",
+      "date": "1865-04-11",
+      "place": "Washington, D.C.",
+      "intro": "Two days after Lee's surrender, in my last public address on April 11, 1865, I said:",
+      "topics": ["peace", "victory", "end of war", "surrender", "joy", "lee", "richmond", "happy", "celebration"]
+    }
+  ]
+}

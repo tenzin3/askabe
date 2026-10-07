@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnswerMe · Ask Mr. Lincoln</title>
+  <meta name="description" content="Ask Abraham Lincoln a question. Every answer is a verbatim quotation from his speeches and letters, with date and place.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='9' y='2' width='14' height='16' fill='%231c1714'/><rect x='4' y='17' width='24' height='4' rx='2' fill='%231c1714'/></svg>">
+</head>
+<body>
+  <header class="masthead">
+    <p class="kicker"><span>AnswerMe</span><span>Speeches &amp; letters, 1832 – 1865</span><span>Primary sources only</span></p>
+    <h1>Ask Mr. Lincoln</h1>
+    <p class="dek">Put a question to the sixteenth President. He answers only in words he actually spoke or wrote, with the date and place for each.</p>
+  </header>
+
+  <main class="stage">
+    <section class="portrait" aria-label="Animated portrait of Abraham Lincoln">
+      <div class="frame">
+        <svg id="lincoln" viewBox="0 0 400 500" role="img" aria-label="Illustrated portrait of Abraham Lincoln">
+          <defs>
+            <radialGradient id="bg" cx="50%" cy="38%" r="70%">
+              <stop offset="0" stop-color="#efe3c6"/>
+              <stop offset="1" stop-color="#c4ab80"/>
+            </radialGradient>
+            <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#2a211b" stroke-width="1"/>
+            </pattern>
+            <clipPath id="oval"><ellipse cx="200" cy="250" rx="196" ry="246"/></clipPath>
+          </defs>
+          <g clip-path="url(#oval)">
+            <rect width="400" height="500" fill="url(#bg)"/>
+            <rect width="400" height="500" fill="url(#hatch)" opacity="0.05"/>
+
+            <!-- Body -->
+            <path d="M30 505 C42 440 106 416 166 408 L200 470 L234 408 C294 416 358 440 370 505 Z" fill="#1f1a17"/>
+            <path d="M166 408 L190 486 L200 470 Z M234 408 L210 486 L200 470 Z" fill="#14100e"/>
+            <path d="M168 402 L232 402 L221 466 L200 486 L179 466 Z" fill="#f2ebdc"/>
+            <path d="M172 398 L197 416 L178 428 Z M228 398 L203 416 L222 428 Z" fill="#fbf6ec" stroke="#cbbfa6" stroke-width="1"/>
+            <rect x="178" y="356" width="44" height="56" fill="#b98f6a"/>
+
+            <g id="head">
+              <!-- Ears -->
+              <ellipse cx="143" cy="252" rx="9" ry="19" fill="#c99f78"/>
+              <ellipse cx="257" cy="252" rx="9" ry="19" fill="#c99f78"/>
+              <!-- Hair -->
+              <path d="M134 158 C116 186 118 228 138 254 L152 246 C143 214 145 186 154 164 Z" fill="#2a211b"/>
+              <path d="M266 158 C284 186 282 228 262 254 L248 246 C257 214 255 186 246 164 Z" fill="#2a211b"/>
+              <!-- Face -->
+              <path d="M146 162 C139 210 140 282 156 330 C168 362 186 372 200 372 C214 372 232 362 244 330 C260 282 261 210 254 162 Z" fill="#d8b48f"/>
+              <!-- Shading: temples, cheekbones, hollow cheeks -->
+              <path d="M150 190 C146 215 147 235 152 250" stroke="#b98f6a" stroke-width="7" fill="none" opacity=".45" stroke-linecap="round"/>
+              <path d="M250 190 C254 215 253 235 248 250" stroke="#b98f6a" stroke-width="7" fill="none" opacity=".45" stroke-linecap="round"/>
+              <path d="M160 268 C163 290 170 302 179 300" stroke="#b98f6a" stroke-width="6" fill="none" opacity=".55" stroke-linecap="round"/>
+              <path d="M240 268 C237 290 230 302 221 300" stroke="#b98f6a" stroke-width="6" fill="none" opacity=".55" stroke-linecap="round"/>
+              <path d="M178 198 C190 194 210 194 222 198" stroke="#b98f6a" stroke-width="1.6" fill="none" opacity=".6"/>
+              <path d="M182 206 C192 203 208 203 218 206" stroke="#b98f6a" stroke-width="1.4" fill="none" opacity=".45"/>
+              <!-- Eye sockets -->
+              <ellipse cx="176" cy="238" rx="17" ry="10" fill="#b98f6a" opacity=".55"/>
+              <ellipse cx="224" cy="238" rx="17" ry="10" fill="#b98f6a" opacity=".55"/>
+              <!-- Eyes -->
+              <g class="eye">
+                <ellipse cx="176" cy="240" rx="9" ry="4.6" fill="#efe6d6"/>
+                <circle cx="177" cy="240" r="3.7" fill="#5a4634"/>
+                <circle cx="177" cy="240" r="1.8" fill="#120d0a"/>
+                <path d="M166 238.5 C171 234.5 181 234.5 186 238.5" stroke="#3a2a20" stroke-width="2" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="eye">
+                <ellipse cx="224" cy="240" rx="9" ry="4.6" fill="#efe6d6"/>
+                <circle cx="223" cy="240" r="3.7" fill="#5a4634"/>
+                <circle cx="223" cy="240" r="1.8" fill="#120d0a"/>
+                <path d="M214 238.5 C219 234.5 229 234.5 234 238.5" stroke="#3a2a20" stroke-width="2" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- Brows -->
+              <path d="M159 227 C167 220 180 218 191 223" stroke="#2a211b" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+              <path d="M241 227 C233 220 220 218 209 223" stroke="#2a211b" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+              <!-- Nose -->
+              <path d="M198 238 C196 258 192 276 190 287 C194 294 206 294 211 287" stroke="#a37a57" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <path d="M192 288 C195 284 198 285 199 289 M209 288 C206 284 203 285 202 289" stroke="#8a6346" stroke-width="1.6" fill="none"/>
+              <!-- Mouth -->
+              <ellipse id="mouth-inner" cx="200" cy="318" rx="13" ry="1.2" fill="#3a1712"/>
+              <path d="M183 317 C191 313 209 313 217 317" stroke="#7a4636" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path id="lower-lip" d="M187 320 C194 324 206 324 213 320" stroke="#9a5d48" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <!-- Mole -->
+              <circle cx="181" cy="305" r="2.6" fill="#6b4a35"/>
+              <!-- Chin-curtain beard -->
+              <path d="M138 262 C136 325 154 398 200 412 C246 398 264 325 262 262 C256 270 252 276 248 280 C246 312 232 338 200 346 C168 338 154 312 152 280 C148 276 144 270 138 262 Z" fill="#2a211b"/>
+              <path d="M150 300 l4 12 M158 330 l5 10 M172 360 l4 9 M196 372 l1 10 M222 362 l-4 9 M240 332 l-5 10 M249 302 l-4 12" stroke="#4a3b30" stroke-width="2" stroke-linecap="round"/>
+              <!-- Stovepipe hat -->
+              <path d="M130 30 L270 30 L265 152 L135 152 Z" fill="#1c1714"/>
+              <path d="M150 34 L156 148" stroke="#3a322c" stroke-width="5" opacity=".7" stroke-linecap="round"/>
+              <ellipse cx="200" cy="30" rx="70" ry="8" fill="#2c2520"/>
+              <rect x="134" y="128" width="132" height="20" fill="#0c0a09"/>
+              <ellipse cx="200" cy="156" rx="106" ry="13" fill="#1c1714"/>
+              <path d="M98 154 C140 162 260 162 302 154" stroke="#3a322c" stroke-width="2" fill="none"/>
+            </g>
+
+            <!-- Bow tie (drawn over the beard's lower edge) -->
+            <path d="M200 421 L178 410 L180 433 Z M200 421 L222 410 L220 433 Z" fill="#100c0a"/>
+            <rect x="195" y="415" width="10" height="12" rx="2" fill="#000"/>
+          </g>
+          <ellipse cx="200" cy="250" rx="196" ry="246" fill="none" stroke="#8c6d3f" stroke-width="5"/>
+          <ellipse cx="200" cy="250" rx="188" ry="238" fill="none" stroke="#8c6d3f" stroke-width="1.2" opacity=".7"/>
+        </svg>
+      </div>
+      <p class="plate">A. Lincoln <span>1809 – 1865</span></p>
+      <div class="portrait-controls">
+        <button id="mute" type="button" class="ghost" aria-pressed="false">Voice on</button>
+        <button id="hush" type="button" class="ghost" hidden>Stop</button>
+      </div>
+    </section>
+
+    <section class="dialogue" aria-label="Conversation">
+      <ol id="transcript" aria-live="polite"></ol>
+
+      <form id="ask" autocomplete="off">
+        <label for="q" class="sr-only">Your question for Mr. Lincoln</label>
+        <input id="q" name="q" type="text" placeholder="Ask about liberty, war, grief, work, honesty…" maxlength="300" required>
+        <button id="mic" type="button" class="icon" aria-label="Ask by voice" hidden>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12Z" fill="currentColor"/></svg>
+        </button>
+        <button type="submit" class="primary">Ask</button>
+      </form>
+
+      <div class="chips" id="chips" aria-label="Suggested questions"></div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p><strong>How it works.</strong> Your question is matched, in your browser, against a collection of Lincoln's speeches and letters. The quotation in each answer is verbatim. The italic lead-in before it is written by this app. Sources: <em>The Collected Works of Abraham Lincoln</em> (public domain)<span id="wq-credit" hidden> and Wikiquote (CC BY-SA 4.0)</span>.</p>
+    <p>The portrait is an original illustration. This project is not affiliated with any museum, library or government body.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

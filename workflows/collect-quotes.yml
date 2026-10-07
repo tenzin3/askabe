@@ -1,0 +1,34 @@
+name: Collect Wikiquote quotes
+
+# Run manually from the Actions tab. Pulls the person's Wikiquote page and
+# commits data/wikiquote_lincoln.json, which the app merges automatically.
+on:
+  workflow_dispatch:
+    inputs:
+      page:
+        description: "Wikiquote page title"
+        default: "Abraham_Lincoln"
+      out:
+        description: "Output file"
+        default: "data/wikiquote_lincoln.json"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/collect_wikiquote.py --page "${{ inputs.page }}" --out "${{ inputs.out }}"
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ inputs.out }}"
+          git diff --cached --quiet || git commit -m "Update ${{ inputs.out }} from Wikiquote"
+          git push
