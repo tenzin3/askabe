@@ -21,7 +21,7 @@ import requests
 from bs4 import BeautifulSoup
 
 API = "https://en.wikiquote.org/w/api.php"
-HEADERS = {"User-Agent": "AnswerMe/0.1 (https://github.com/; quote collector)"}
+HEADERS = {"User-Agent": "AskAbe/0.1 (https://github.com/tenzin3/askabe; quote collector)"}
 
 SKIP_SECTIONS = (
     "about", "misattributed", "disputed", "see also", "external links",

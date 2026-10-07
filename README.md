@@ -1,17 +1,17 @@
 <div align="center">
 
-# AnswerMe · Ask Mr. Lincoln
+# Ask Abe
 
 **Ask Abraham Lincoln anything. He answers only with words he actually spoke or wrote.**
 
-[![Live demo](https://img.shields.io/badge/live%20demo-tenzin3.github.io%2Fanswerme-7a2e22?style=flat-square)](https://tenzin3.github.io/answerme/)
+[![Live demo](https://img.shields.io/badge/live%20demo-tenzin3.github.io%2Faskabe-7a2e22?style=flat-square)](https://tenzin3.github.io/askabe/)
 ![No server](https://img.shields.io/badge/backend-none-2b2118?style=flat-square)
 ![Quotes](https://img.shields.io/badge/quotes-public%20domain-8c6d3f?style=flat-square)
 
-[**Open the app →**](https://tenzin3.github.io/answerme/)
+[**Open the app →**](https://tenzin3.github.io/askabe/)
 
-<a href="https://tenzin3.github.io/answerme/?q=How%20should%20we%20treat%20our%20enemies%3F">
-  <img src="docs/screenshot.png" alt="AnswerMe: an illustrated Lincoln portrait answering 'How should we treat our enemies?' with a quote from his First Inaugural Address" width="800">
+<a href="https://tenzin3.github.io/askabe/?q=How%20should%20we%20treat%20our%20enemies%3F">
+  <img src="docs/screenshot.png" alt="Ask Abe: an illustrated Lincoln portrait answering 'How should we treat our enemies?' with a quote from his First Inaugural Address" width="800">
 </a>
 
 </div>
@@ -22,19 +22,19 @@
 
 Most "Lincoln quotes" online are wrong. Some he never said, and others are missing their date and context. AI chatbots make it worse by confidently inventing new ones.
 
-AnswerMe does the opposite. Every answer is a **verbatim passage** from Lincoln's speeches, letters and messages, shown with **where and when** he said it. If nothing on record fits your question, he tells you so instead of making something up.
+Ask Abe does the opposite. Every answer is a **verbatim passage** from Lincoln's speeches, letters and messages, shown with **where and when** he said it. If nothing on record fits your question, he tells you so instead of making something up.
 
 ## Try these
 
 | Ask | He answers from |
 |---|---|
-| [How should we treat our enemies?](https://tenzin3.github.io/answerme/?q=How%20should%20we%20treat%20our%20enemies%3F) | First Inaugural Address, 1861 |
-| [What is democracy?](https://tenzin3.github.io/answerme/?q=What%20is%20democracy%3F) | Fragment on Democracy, c. 1858 |
-| [How do I deal with grief?](https://tenzin3.github.io/answerme/?q=How%20do%20I%20deal%20with%20grief%3F) | Letter to Fanny McCullough, 1862 |
-| [Is it ok to lie?](https://tenzin3.github.io/answerme/?q=Is%20it%20ok%20to%20lie%3F) | Notes for a Law Lecture, c. 1850 |
-| [What did you believe about race?](https://tenzin3.github.io/answerme/?q=What%20did%20you%20believe%20about%20race%3F) | Charleston debate, 1858, and his last speech, 1865 |
+| [How should we treat our enemies?](https://tenzin3.github.io/askabe/?q=How%20should%20we%20treat%20our%20enemies%3F) | First Inaugural Address, 1861 |
+| [What is democracy?](https://tenzin3.github.io/askabe/?q=What%20is%20democracy%3F) | Fragment on Democracy, c. 1858 |
+| [How do I deal with grief?](https://tenzin3.github.io/askabe/?q=How%20do%20I%20deal%20with%20grief%3F) | Letter to Fanny McCullough, 1862 |
+| [Is it ok to lie?](https://tenzin3.github.io/askabe/?q=Is%20it%20ok%20to%20lie%3F) | Notes for a Law Lecture, c. 1850 |
+| [What did you believe about race?](https://tenzin3.github.io/askabe/?q=What%20did%20you%20believe%20about%20race%3F) | Charleston debate, 1858, and his last speech, 1865 |
 
-Any question works as a link: `https://tenzin3.github.io/answerme/?q=your question`.
+Any question works as a link: `https://tenzin3.github.io/askabe/?q=your question`.
 
 ## Features
 
@@ -106,8 +106,8 @@ The app merges `data/wikiquote_lincoln.json` automatically, skips duplicates and
 Browsers won't load the quote file from a double-clicked `index.html`, so start a tiny local server:
 
 ```bash
-git clone https://github.com/tenzin3/answerme.git
-cd answerme
+git clone https://github.com/tenzin3/askabe.git
+cd askabe
 python3 -m http.server 8000
 ```
 
@@ -115,7 +115,7 @@ Then open <http://localhost:8000>.
 
 ## Deploy (free, on GitHub Pages)
 
-The live site is **https://tenzin3.github.io/answerme/**. To deploy your own copy:
+The live site is **https://tenzin3.github.io/askabe/**. To deploy your own copy:
 
 1. Go to **Settings → Pages → Build and deployment**.
 2. Set **Source** to **GitHub Actions**. The included [`pages.yml`](.github/workflows/pages.yml) publishes the site on every push to `main`.
