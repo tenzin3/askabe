@@ -52,8 +52,16 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 
 /* ---------- app shell: always exactly one screen tall ---------- */
 .app {
+  /* Pinned to the visible screen. --app-h / --app-top come from
+     visualViewport in app.js so the layout shrinks above the phone
+     keyboard instead of being scrolled off screen. */
+  position: fixed;
+  top: var(--app-top, 0px);
+  left: 0;
+  right: 0;
   height: 100vh;
   height: 100dvh;
+  height: var(--app-h, 100dvh);
   max-width: 1120px;
   margin: 0 auto;
   display: flex;
@@ -280,9 +288,13 @@ h1 {
   .plate { margin-top: 6px; padding: 2px 12px; font-size: 15px; }
   .plate span { font-size: 12px; }
   .hush { font-size: 13px; padding: 3px 11px; right: -18%; bottom: 4%; }
-  /* Give the conversation more room while typing (keyboard open). */
-  .app:has(#q:focus) .frame { height: 13dvh; }
-  .app:has(#q:focus) .plate { display: none; }
+  /* Keyboard open: keep Abe in view, just smaller, beside a slimmer header. */
+  .app.typing .top { padding-top: 4px; padding-bottom: 4px; }
+  .app.typing h1 { font-size: 22px; }
+  .app.typing .icon-btn { width: 32px; height: 32px; }
+  .app.typing .frame { height: 96px; filter: drop-shadow(0 6px 8px rgba(43, 33, 24, .22)); }
+  .app.typing .plate { display: none; }
+  .app.typing .stage { padding-top: 6px; padding-bottom: 6px; }
   #transcript { gap: 14px; padding-right: 0; }
   .answer { padding: 12px 14px 10px; }
   .quote p { font-size: 19.5px; line-height: 1.36; }

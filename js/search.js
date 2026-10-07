@@ -41,6 +41,14 @@ const SYN = {
   soldier: ["soldiers", "army", "veterans"], veteran: ["veterans", "soldiers"], military: ["army", "generals"],
   procrastinate: ["delay", "caution", "action"], procrastination: ["delay", "caution"], lazy: ["idle", "idler", "work"],
   dream: ["ambition", "goal"], goal: ["ambition", "purpose"], meaning: ["purpose"], purpose: ["meaning"],
+  breakup: ["sorrow", "grief", "affliction", "pass"], broke: ["sorrow", "affliction", "pass"],
+  heartbreak: ["sorrow", "grief", "affliction", "pass"], heartbroken: ["sorrow", "grief", "affliction", "pass"],
+  girlfriend: ["sorrow", "affliction", "pass"], boyfriend: ["sorrow", "affliction", "pass"],
+  dumped: ["sorrow", "affliction", "pass"], divorce: ["sorrow", "affliction", "pass"],
+  relationship: ["friend", "affection"], love: ["affection", "friend"], hurt: ["sorrow", "distress"],
+  cry: ["sorrow", "grief"], crying: ["sorrow", "grief"], upset: ["sorrow", "distress"], anxious: ["distress", "affliction"],
+  anxiety: ["distress", "affliction"], stress: ["distress", "difficulty"], stressed: ["distress", "difficulty"],
+  unhappy: ["sorrow", "happy"], miserable: ["sorrow", "affliction"], hopeless: ["hope", "happy", "sorrow"],
   danger: ["threat"], threat: ["danger"], media: ["public", "sentiment"], news: ["public", "sentiment"],
 };
 
@@ -55,6 +63,21 @@ function stem(w) {
 function words(s) {
   return (s || "").toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9\s-]/g, " ")
     .split(/[\s-]+/).filter((w) => w.length > 1 && !STOP.has(w));
+}
+
+function editDistance(a, b, limit) {
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      rowMin = Math.min(rowMin, cur[j]);
+    }
+    if (rowMin >= limit) return limit;
+    prev = cur;
+  }
+  return prev[b.length];
 }
 
 export function tokenize(s) {
@@ -78,9 +101,25 @@ export class QuoteIndex {
     for (const d of this.docs) for (const t of d.tf.keys()) this.df.set(t, (this.df.get(t) || 0) + 1);
   }
 
+  // Closest indexed word to a misspelled one ("democrazy" → "democracy").
+  correct(t) {
+    // Short words are too often real words we simply don't index ("deal", "treat").
+    if (t.length < 6 || this.df.has(t)) return null;
+    const maxDist = t.length >= 8 ? 2 : 1;
+    let best = null, bestD = maxDist + 1;
+    for (const v of this.df.keys()) {
+      if (Math.abs(v.length - t.length) > maxDist || v[0] !== t[0]) continue;
+      const d = editDistance(t, v, bestD);
+      if (d < bestD) { best = v; bestD = d; }
+    }
+    return best;
+  }
+
   queryTerms(question) {
     const terms = new Map();
     for (const w of words(question)) {
+      const fixed = SYN[w] || SYN[stem(w)] ? null : this.correct(stem(w));
+      if (fixed) terms.set(fixed, Math.max(terms.get(fixed) || 0, 0.9));
       terms.set(stem(w), Math.max(terms.get(stem(w)) || 0, 1));
       for (const s of SYN[w] || SYN[stem(w)] || []) {
         for (const t of tokenize(s)) terms.set(t, Math.max(terms.get(t) || 0, 0.4));

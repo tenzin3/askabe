@@ -202,6 +202,24 @@ if (SR) {
   });
 }
 
+// ---------- phone keyboard handling ----------
+// Size the app to the area actually visible above the on-screen keyboard,
+// so the header and portrait never get scrolled out of view.
+const appEl = $(".app");
+const vv = window.visualViewport;
+if (vv) {
+  const fit = () => {
+    document.documentElement.style.setProperty("--app-h", `${vv.height}px`);
+    document.documentElement.style.setProperty("--app-top", `${vv.offsetTop}px`);
+    if (window.scrollY) window.scrollTo(0, 0);
+  };
+  vv.addEventListener("resize", fit);
+  vv.addEventListener("scroll", fit);
+  fit();
+}
+input.addEventListener("focus", () => appEl.classList.add("typing"));
+input.addEventListener("blur", () => appEl.classList.remove("typing"));
+
 // ---------- start ----------
 loadQuotes().then((quotes) => {
   index = new QuoteIndex(quotes);
